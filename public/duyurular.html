@@ -6,7 +6,7 @@
   <meta name="description" content="Karabük Mehmet Vergili Fen Lisesi Mezunlar Derneği duyuruları.">
   <title>Duyurular | KMVFLMD</title>
   <link rel="icon" href="assets/images/logo-kare.webp" type="image/webp">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
   <script src="assets/js/app.js" defer></script>
 </head>
 <body>
@@ -15,8 +15,10 @@
       <a class="brand" href="index.html" aria-label="Ana sayfa">
         <img src="assets/images/logo-yatay.webp" alt="KMVFLMD" width="360" height="203">
       </a>
-      <nav class="main-nav visible" aria-label="Sayfa menüsü">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu">Menü</button>
+      <nav id="main-menu" class="main-nav" aria-label="Sayfa menüsü">
         <a href="index.html">Ana Sayfa</a>
+        <a href="https://www.instagram.com/kmvfl_mezunlar_dernegi?stkn=ZzRjZWhxMWczZGdn" target="_blank" rel="noopener noreferrer">Instagram</a>
       </nav>
     </div>
   </header>
@@ -40,6 +42,7 @@
     <div class="container footer-inner">
       <img src="assets/images/logo-kare.webp" alt="KMVFLMD amblemi" width="72" height="72">
       <div><strong>KMVFLMD</strong><p>Birlikte Güçlüyüz.</p></div>
+      <p class="footer-social"><a href="https://www.instagram.com/kmvfl_mezunlar_dernegi?stkn=ZzRjZWhxMWczZGdn" target="_blank" rel="noopener noreferrer">Instagram</a></p>
       <p class="copyright">© <span data-current-year></span> KMVFLMD</p>
     </div>
   </footer>

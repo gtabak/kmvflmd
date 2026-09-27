@@ -53,7 +53,7 @@ button, input, textarea { font: inherit; }
 .hero img { width: 100%; border-radius: 26px; box-shadow: var(--shadow); }
 
 .section { padding: 92px 0; }
-.section:nth-of-type(even) { background: var(--surface); }
+.section.mission, .section.announcements { background: var(--surface); }
 .eyebrow { margin: 0 0 10px; color: var(--gold); text-transform: uppercase; letter-spacing: .16em; font-size: .78rem; font-weight: 800; }
 h1, h2, h3 { color: var(--navy); line-height: 1.15; }
 h1, h2 { font-family: Georgia, "Times New Roman", serif; }
@@ -95,7 +95,7 @@ h2 { margin: 0 0 24px; font-size: clamp(2rem, 5vw, 3.3rem); }
 .announcement-body p { margin: 0 0 1.25em; }
 
 .site-footer { padding: 34px 0; color: #eaf0f8; background: var(--navy); }
-.footer-inner { display: grid; grid-template-columns: auto 1fr auto; gap: 20px; align-items: center; }
+.footer-inner { display: grid; grid-template-columns: auto 1fr auto auto; gap: 20px; align-items: center; }
 .footer-inner img { border-radius: 50%; }
 .footer-inner strong { display: block; color: #fff; }
 .footer-inner p { margin: 4px 0 0; }
@@ -125,4 +125,24 @@ h2 { margin: 0 0 24px; font-size: clamp(2rem, 5vw, 3.3rem); }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+}
+
+.assembly-banner { padding: 28px 0; }
+.assembly-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 32px; background: var(--navy); border-radius: var(--radius); color: #fff; }
+.assembly-inner .eyebrow { color: var(--gold-soft); }
+.assembly-inner h2 { color: #fff; margin-bottom: 12px; }
+.assembly-inner p:last-child { margin: 0; }
+.assembly-inner time { font-weight: 800; }
+.assembly-link { flex-shrink: 0; padding: 12px 20px; background: var(--gold-soft); color: var(--navy); border-radius: 10px; font-weight: 800; text-decoration: none; }
+.assembly-link:hover { background: #fff; }
+.footer-social a { text-underline-offset: 4px; }
+@media (max-width: 980px) {
+  .assembly-inner { flex-direction: column; align-items: flex-start; padding: 24px; }
+  .footer-social { grid-column: 1 / -1; }
+}
+
+@media (min-width: 721px) and (max-width: 980px) {
+  .header-inner { gap: 16px; }
+  .brand { width: 240px; }
+  .main-nav { gap: 16px; }
 }
